@@ -4,7 +4,7 @@ import pytesseract
 
 # Configure Tesseract for Hindi and English
 # For Windows
-pytesseract.pytesseract.tesseract_cmd = r'C:/Program Files/Tesseract-OCR/tesseract.exe'
+pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
 # Update this to your Tesseract-OCR path if needed
 languages = 'eng+hin'  # for English and Hindi OCR
 
