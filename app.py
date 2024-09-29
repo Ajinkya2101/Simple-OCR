@@ -42,5 +42,3 @@ if uploaded_image:
         else:
             st.error(f"The keyword '{keyword}' was not found in the text.")
 
-# Deployment message
-st.markdown("The app will be accessible via a live URL once deployed.")
