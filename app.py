@@ -1,11 +1,13 @@
 import streamlit as st
 from PIL import Image
 import pytesseract
+import os
+
+# Install Tesseract in Streamlit Cloud environment
+!apt-get install tesseract-ocr
 
 # Configure Tesseract for Hindi and English
-# For Windows
 pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
-# Update this to your Tesseract-OCR path if needed
 languages = 'eng+hin'  # for English and Hindi OCR
 
 def extract_text(image):
@@ -45,6 +47,3 @@ if uploaded_image:
 
 # Deployment message
 st.markdown("The app will be accessible via a live URL once deployed.")
-
-# For deployment, run in the terminal:
-# streamlit run app.py
