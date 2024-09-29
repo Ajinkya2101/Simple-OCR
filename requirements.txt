@@ -1,3 +1,5 @@
-Pillow==9.3.0
-pytesseract==0.3.10
-streamlit==1.25.0
+streamlit
+pytesseract
+opencv-python
+Pillow>=9.5.0
+
