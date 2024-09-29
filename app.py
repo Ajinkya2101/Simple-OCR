@@ -3,9 +3,6 @@ from PIL import Image
 import pytesseract
 import os
 
-# Install Tesseract in Streamlit Cloud environment
-!apt-get install tesseract-ocr
-
 # Configure Tesseract for Hindi and English
 pytesseract.pytesseract.tesseract_cmd = '/usr/bin/tesseract'
 languages = 'eng+hin'  # for English and Hindi OCR
