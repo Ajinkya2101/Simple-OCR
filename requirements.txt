@@ -1,4 +1,4 @@
 streamlit
 Pillow
-sudo apt-get install tesseract-ocr
+tesseract-ocr
 opencv-python
